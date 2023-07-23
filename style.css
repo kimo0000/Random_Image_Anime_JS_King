@@ -1,0 +1,64 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to right, #f5f5f5 0%, #f45221);
+}
+
+.container {
+    width: 50%;
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr;
+    gap: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    text-align: center;
+}
+
+#result img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #444;
+    border-radius: 50%;
+}
+
+.name_random {
+    color: #f05;
+}
+
+#get_anime {
+    margin: 0 auto;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #f45221;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#get_anime:hover {
+    opacity: .5;
+    color: #000;
+}
+
+#result {
+    display: none;
+}
